@@ -1,0 +1,25 @@
+{
+    "name": "be.jellever.database-tools",
+    "version": "0.0.1",
+    "displayName": "Database Tools",
+    "description": "Tools to connect to a mysql database using PHP",
+    "dependencies": {},
+    "keywords": [
+        "database",
+        "PHP",
+        "mysql",
+        "leaderboards"
+    ],
+    "author": {
+        "name": "Jelle",
+        "email": "jelle@jellever.be",
+        "url": "https://www.jellever.be"
+    },
+    "samples": [
+        {
+            "displayName": "Working Sample scenes",
+            "description": "Shows how everything works in practice",
+            "path": "Samples~/SampleProject"
+        }
+    ]
+}
