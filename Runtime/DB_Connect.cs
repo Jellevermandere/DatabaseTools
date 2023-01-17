@@ -9,6 +9,10 @@ namespace JelleVer.DatabaseTools
     // connects to the database through a webrequest
     // todo convert to async await
     // todo add single element download
+
+    /// <summary>
+    /// The main connection to the databse server
+    /// </summary>
     public class DB_Connect : MonoBehaviour
     {
         [Header("Server Files")]
