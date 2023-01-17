@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Database Tools | DatabaseTools </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Database Tools | DatabaseTools ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="resources/favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="resources/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="api/JelleVer.DatabaseTools.html" title="Scripting API">Scripting API</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="database-tools">Database Tools</h1>
+
+<p>A package to communicate from Unity to a mysql database using PHP</p>
+<pre><code class="lang-cs"> namespace JelleVer.DatabaseTools
+</code></pre><!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
+<ul>
+<li><a href="#database-tools">Database Tools</a><ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#unity-side">Unity side</a><ul>
+<li><a href="#uploading-data">Uploading data</a></li>
+<li><a href="#downloading-data">Downloading data</a></li>
+</ul>
+</li>
+<li><a href="#server-side">Server side</a></li>
+<li><a href="#licensing">Licensing</a></li>
+</ul>
+</li>
+</ul>
+<!-- /code_chunk_output -->
+<h2 id="installation">Installation</h2>
+<p>This can be imported as a UnityPackage in any existing Unity project through the <a href="https://docs.unity3d.com/Manual/Packages.html">Package manager</a> with the Git url.</p>
+<h2 id="unity-side">Unity side</h2>
+<p>The connection is made through the <code>DB_Connect</code>script. 
+Fill in the correct url&#39;s and table name in the inspector.
+There are callbacks in the form of UnityEvents when a request is completed</p>
+<h3 id="uploading-data">Uploading data</h3>
+<p>Data can be send to the database using:</p>
+<pre><code class="lang-cs">public void TryUploadData(string username, Object data){}
+public void TryUploadData(string username, string data){}
+</code></pre><p>Where the username is used to identify the player and the data can be anything you want.
+If the data is passed as an object make sure it&#39;s <code>[System.Serializable]</code>, it will get serialized to JSON before being send.</p>
+<h3 id="downloading-data">Downloading data</h3>
+<p>The data can be downloaded using:</p>
+<pre><code class="lang-cs"> public void TryDownloadData(){}
+</code></pre><p>It will return all the entries in the database as an array of:</p>
+<pre><code class="lang-cs">public class UserData
+{
+  public string username = &quot;&quot;;
+  public string data = &quot;&quot;;
+}
+</code></pre><p>The data is received as a <code>UserDataArray</code> as a wrapper class, but the UnityEvent passes a regular <code>UserData[]</code></p>
+<h2 id="server-side">Server side</h2>
+<p>You will need a mysql database and a server that supports PHP.
+Fill in the database credentials in <code>dbh.inc.php</code> in the <code>ServerFiles</code>folder:</p>
+<pre><code class="lang-php">$dbServername = &quot;&quot;;//Database  server name;
+$dbUsername =  &quot;&quot;;//Database username;
+$dbPassword = &quot;&quot;;//Database password;
+$dbName = &quot;&quot;;//Database name;
+</code></pre><p>Put the whole folder on your server. and fill in the link in the <code>DB_Connect</code> in Unity.</p>
+<h2 id="licensing">Licensing</h2>
+<p>The code in this project is licensed under MIT license.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Jellevermandere/DatabaseTools/blob/main/Documentation~/DocFx/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Jelle Vermandere
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

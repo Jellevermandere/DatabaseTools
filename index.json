@@ -1,0 +1,32 @@
+{
+  "api/JelleVer.DatabaseTools.DB_Connect.html": {
+    "href": "api/JelleVer.DatabaseTools.DB_Connect.html",
+    "title": "Class DB_Connect | DatabaseTools",
+    "keywords": "Class DB_Connect The main connection to the databse server Inheritance Object DB_Connect Namespace : JelleVer.DatabaseTools Assembly : cs.temp.dll.dll Syntax public class DB_Connect : MonoBehaviour Fields downloadSuccesEvent Declaration public UserDataArrayEvent downloadSuccesEvent Field Value Type Description UserDataArrayEvent uploadSuccesEvent Declaration public UnityEvent uploadSuccesEvent Field Value Type Description UnityEvent Methods TryDownloadData() Starts Downloading the data from the server Declaration public void TryDownloadData() TryUploadData(String, Object) Start Uploading data to the serever Declaration public void TryUploadData(string username, Object data) Parameters Type Name Description String username the name of the user to link the data to Object data the actual data, to be serialised to Json TryUploadData(String, String) Start Uploading data to the serever Declaration public void TryUploadData(string username, string data) Parameters Type Name Description String username the name of the user to link the data to String data the actual data"
+  },
+  "api/JelleVer.DatabaseTools.html": {
+    "href": "api/JelleVer.DatabaseTools.html",
+    "title": "Namespace JelleVer.DatabaseTools | DatabaseTools",
+    "keywords": "Namespace JelleVer.DatabaseTools Classes DB_Connect The main connection to the databse server UserData A custom class to store the Username and Data together UserDataArray A wrapper class for a UserData array so it can be parsed correctly from Json UserDataArrayEvent A custom event To return an array of UserData's"
+  },
+  "api/JelleVer.DatabaseTools.UserData.html": {
+    "href": "api/JelleVer.DatabaseTools.UserData.html",
+    "title": "Class UserData | DatabaseTools",
+    "keywords": "Class UserData A custom class to store the Username and Data together Inheritance Object UserData Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : JelleVer.DatabaseTools Assembly : cs.temp.dll.dll Syntax [Serializable] public class UserData Fields data Declaration public string data Field Value Type Description String username Declaration public string username Field Value Type Description String"
+  },
+  "api/JelleVer.DatabaseTools.UserDataArray.html": {
+    "href": "api/JelleVer.DatabaseTools.UserDataArray.html",
+    "title": "Class UserDataArray | DatabaseTools",
+    "keywords": "Class UserDataArray A wrapper class for a UserData array so it can be parsed correctly from Json Inheritance Object UserDataArray Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : JelleVer.DatabaseTools Assembly : cs.temp.dll.dll Syntax [Serializable] public class UserDataArray Fields userDataArray Declaration public UserData[] userDataArray Field Value Type Description UserData []"
+  },
+  "api/JelleVer.DatabaseTools.UserDataArrayEvent.html": {
+    "href": "api/JelleVer.DatabaseTools.UserDataArrayEvent.html",
+    "title": "Class UserDataArrayEvent | DatabaseTools",
+    "keywords": "Class UserDataArrayEvent A custom event To return an array of UserData's Inheritance Object UserDataArrayEvent Namespace : JelleVer.DatabaseTools Assembly : cs.temp.dll.dll Syntax [Serializable] public class UserDataArrayEvent : UnityEvent<UserData[]>"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "Database Tools | DatabaseTools",
+    "keywords": "Database Tools A package to communicate from Unity to a mysql database using PHP namespace JelleVer.DatabaseTools <!-- @import \"[TOC]\" {cmd=\"toc\" depthFrom=1 depthTo=6 orderedList=false} --> <!-- code_chunk_output --> Database Tools Installation Unity side Uploading data Downloading data Server side Licensing <!-- /code_chunk_output --> Installation This can be imported as a UnityPackage in any existing Unity project through the Package manager with the Git url. Unity side The connection is made through the DB_Connect script. Fill in the correct url's and table name in the inspector. There are callbacks in the form of UnityEvents when a request is completed Uploading data Data can be send to the database using: public void TryUploadData(string username, Object data){} public void TryUploadData(string username, string data){} Where the username is used to identify the player and the data can be anything you want. If the data is passed as an object make sure it's [System.Serializable] , it will get serialized to JSON before being send. Downloading data The data can be downloaded using: public void TryDownloadData(){} It will return all the entries in the database as an array of: public class UserData { public string username = \"\"; public string data = \"\"; } The data is received as a UserDataArray as a wrapper class, but the UnityEvent passes a regular UserData[] Server side You will need a mysql database and a server that supports PHP. Fill in the database credentials in dbh.inc.php in the ServerFiles folder: $dbServername = \"\";//Database server name; $dbUsername = \"\";//Database username; $dbPassword = \"\";//Database password; $dbName = \"\";//Database name; Put the whole folder on your server. and fill in the link in the DB_Connect in Unity. Licensing The code in this project is licensed under MIT license."
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "sitemap": {
+    "fileOptions": {
+      "api/*": {
+        "baseUrl": "https://jellevermandere.github.io/",
+        "changefreq": "daily"
+      }
+    },
+    "baseUrl": "https://jellevermandere.github.io/",
+    "changefreq": "weekly"
+  },
+  "homepages": [],
+  "source_base_path": "D:/a/DatabaseTools/DatabaseTools/Documentation~/DocFx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JelleVer.DatabaseTools.DB_Connect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JelleVer.DatabaseTools.DB_Connect.html",
+          "hash": "NRTRsmk+ht02+gRAe7ZlzBJQ6pOv5KwhZPmXf+uodx4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JelleVer.DatabaseTools.UserData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JelleVer.DatabaseTools.UserData.html",
+          "hash": "nZGSMkuYnttvhlUMQMM1me7Hz3bOY9vOCy3H+9RHHNg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JelleVer.DatabaseTools.UserDataArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JelleVer.DatabaseTools.UserDataArray.html",
+          "hash": "7ECrlNUJS/+OAF3Pynj93GscKbuk50Z3x+UPWSkF2Ck="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JelleVer.DatabaseTools.UserDataArrayEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JelleVer.DatabaseTools.UserDataArrayEvent.html",
+          "hash": "ZpDcqqC7TW25aWVOiSJC9E0PoyEr+8ctvSoOeZ87WKY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JelleVer.DatabaseTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JelleVer.DatabaseTools.html",
+          "hash": "ywMVfGqt6s9x7T/1n7QW/k09ECDkONjtUIcvpFQj1oA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "rsY1+dwdJ6CrYImE/3pkY2Td3c/XubTyMnpQkdo6/Yo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "resources/favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 5,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

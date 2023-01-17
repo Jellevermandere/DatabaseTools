@@ -1,0 +1,95 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: JelleVer.DatabaseTools
+  name: JelleVer.DatabaseTools
+  href: api/JelleVer.DatabaseTools.html
+  commentId: N:JelleVer.DatabaseTools
+  fullName: JelleVer.DatabaseTools
+  nameWithType: JelleVer.DatabaseTools
+- uid: JelleVer.DatabaseTools.DB_Connect
+  name: DB_Connect
+  href: api/JelleVer.DatabaseTools.DB_Connect.html
+  commentId: T:JelleVer.DatabaseTools.DB_Connect
+  fullName: JelleVer.DatabaseTools.DB_Connect
+  nameWithType: DB_Connect
+- uid: JelleVer.DatabaseTools.DB_Connect.downloadSuccesEvent
+  name: downloadSuccesEvent
+  href: api/JelleVer.DatabaseTools.DB_Connect.html#JelleVer_DatabaseTools_DB_Connect_downloadSuccesEvent
+  commentId: F:JelleVer.DatabaseTools.DB_Connect.downloadSuccesEvent
+  fullName: JelleVer.DatabaseTools.DB_Connect.downloadSuccesEvent
+  nameWithType: DB_Connect.downloadSuccesEvent
+- uid: JelleVer.DatabaseTools.DB_Connect.TryDownloadData
+  name: TryDownloadData()
+  href: api/JelleVer.DatabaseTools.DB_Connect.html#JelleVer_DatabaseTools_DB_Connect_TryDownloadData
+  commentId: M:JelleVer.DatabaseTools.DB_Connect.TryDownloadData
+  fullName: JelleVer.DatabaseTools.DB_Connect.TryDownloadData()
+  nameWithType: DB_Connect.TryDownloadData()
+- uid: JelleVer.DatabaseTools.DB_Connect.TryDownloadData*
+  name: TryDownloadData
+  href: api/JelleVer.DatabaseTools.DB_Connect.html#JelleVer_DatabaseTools_DB_Connect_TryDownloadData_
+  commentId: Overload:JelleVer.DatabaseTools.DB_Connect.TryDownloadData
+  isSpec: "True"
+  fullName: JelleVer.DatabaseTools.DB_Connect.TryDownloadData
+  nameWithType: DB_Connect.TryDownloadData
+- uid: JelleVer.DatabaseTools.DB_Connect.TryUploadData(System.String,Object)
+  name: TryUploadData(String, Object)
+  href: api/JelleVer.DatabaseTools.DB_Connect.html#JelleVer_DatabaseTools_DB_Connect_TryUploadData_System_String_Object_
+  commentId: M:JelleVer.DatabaseTools.DB_Connect.TryUploadData(System.String,Object)
+  fullName: JelleVer.DatabaseTools.DB_Connect.TryUploadData(System.String, Object)
+  nameWithType: DB_Connect.TryUploadData(String, Object)
+- uid: JelleVer.DatabaseTools.DB_Connect.TryUploadData(System.String,System.String)
+  name: TryUploadData(String, String)
+  href: api/JelleVer.DatabaseTools.DB_Connect.html#JelleVer_DatabaseTools_DB_Connect_TryUploadData_System_String_System_String_
+  commentId: M:JelleVer.DatabaseTools.DB_Connect.TryUploadData(System.String,System.String)
+  fullName: JelleVer.DatabaseTools.DB_Connect.TryUploadData(System.String, System.String)
+  nameWithType: DB_Connect.TryUploadData(String, String)
+- uid: JelleVer.DatabaseTools.DB_Connect.TryUploadData*
+  name: TryUploadData
+  href: api/JelleVer.DatabaseTools.DB_Connect.html#JelleVer_DatabaseTools_DB_Connect_TryUploadData_
+  commentId: Overload:JelleVer.DatabaseTools.DB_Connect.TryUploadData
+  isSpec: "True"
+  fullName: JelleVer.DatabaseTools.DB_Connect.TryUploadData
+  nameWithType: DB_Connect.TryUploadData
+- uid: JelleVer.DatabaseTools.DB_Connect.uploadSuccesEvent
+  name: uploadSuccesEvent
+  href: api/JelleVer.DatabaseTools.DB_Connect.html#JelleVer_DatabaseTools_DB_Connect_uploadSuccesEvent
+  commentId: F:JelleVer.DatabaseTools.DB_Connect.uploadSuccesEvent
+  fullName: JelleVer.DatabaseTools.DB_Connect.uploadSuccesEvent
+  nameWithType: DB_Connect.uploadSuccesEvent
+- uid: JelleVer.DatabaseTools.UserData
+  name: UserData
+  href: api/JelleVer.DatabaseTools.UserData.html
+  commentId: T:JelleVer.DatabaseTools.UserData
+  fullName: JelleVer.DatabaseTools.UserData
+  nameWithType: UserData
+- uid: JelleVer.DatabaseTools.UserData.data
+  name: data
+  href: api/JelleVer.DatabaseTools.UserData.html#JelleVer_DatabaseTools_UserData_data
+  commentId: F:JelleVer.DatabaseTools.UserData.data
+  fullName: JelleVer.DatabaseTools.UserData.data
+  nameWithType: UserData.data
+- uid: JelleVer.DatabaseTools.UserData.username
+  name: username
+  href: api/JelleVer.DatabaseTools.UserData.html#JelleVer_DatabaseTools_UserData_username
+  commentId: F:JelleVer.DatabaseTools.UserData.username
+  fullName: JelleVer.DatabaseTools.UserData.username
+  nameWithType: UserData.username
+- uid: JelleVer.DatabaseTools.UserDataArray
+  name: UserDataArray
+  href: api/JelleVer.DatabaseTools.UserDataArray.html
+  commentId: T:JelleVer.DatabaseTools.UserDataArray
+  fullName: JelleVer.DatabaseTools.UserDataArray
+  nameWithType: UserDataArray
+- uid: JelleVer.DatabaseTools.UserDataArray.userDataArray
+  name: userDataArray
+  href: api/JelleVer.DatabaseTools.UserDataArray.html#JelleVer_DatabaseTools_UserDataArray_userDataArray
+  commentId: F:JelleVer.DatabaseTools.UserDataArray.userDataArray
+  fullName: JelleVer.DatabaseTools.UserDataArray.userDataArray
+  nameWithType: UserDataArray.userDataArray
+- uid: JelleVer.DatabaseTools.UserDataArrayEvent
+  name: UserDataArrayEvent
+  href: api/JelleVer.DatabaseTools.UserDataArrayEvent.html
+  commentId: T:JelleVer.DatabaseTools.UserDataArrayEvent
+  fullName: JelleVer.DatabaseTools.UserDataArrayEvent
+  nameWithType: UserDataArrayEvent
