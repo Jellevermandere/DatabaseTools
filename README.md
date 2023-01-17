@@ -6,23 +6,14 @@ A package to communicate from Unity to a mysql database using PHP
 ```
 
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Database Tools](#database-tools)
-  - [Installation](#installation)
-  - [Unity side](#unity-side)
-    - [Uploading data](#uploading-data)
-    - [Downloading data](#downloading-data)
-  - [Server side](#server-side)
-  - [Licensing](#licensing)
-
-<!-- /code_chunk_output -->
-
 ## Installation
 
 This can be imported as a UnityPackage in any existing Unity project through the [Package manager](https://docs.unity3d.com/Manual/Packages.html) with the Git url.
+
+## Documentation
+
+You can find the full documentation here: [jellevermandere.github.io/DatabaseTools](https://jellevermandere.github.io/DatabaseTools)
+
 
 ## Unity side
 
